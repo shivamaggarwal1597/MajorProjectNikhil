@@ -52,7 +52,7 @@ public class WeatherForecast extends AppCompatActivity {
                 rain =  owResponse.body().getList().get(3).getRain().get3h();
                 }
                 double humidity =  owResponse.body().getList().get(2).getMain().getHumidity();
-                min_temp.setText("Minimum Temp is  : "+ temp_min  + "  Rain : " + rain);
+                min_temp    .setText("Minimum Temp is  : "+ temp_min  + "  Rain : " + rain);
                 max_temp.setText("Maximum Temp is :"+ temp_max+" Humidity "+ humidity);
             }
 

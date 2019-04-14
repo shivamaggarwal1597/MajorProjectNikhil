@@ -7,13 +7,14 @@
     android:orientation="vertical"
     tools:context="com.example.shivam.majorprojectnikhil.NavigationActivity">
 
+
+
     <Button
+        android:id="@+id/navigate_callibate_sensor_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Callibrate sensors"
-        android:id="@+id/navigate_callibate_sensor_button"
-        />
+        android:text="Callibrate sensors" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -21,4 +22,10 @@
         android:text="Weather Forecast"
         android:id="@+id/navigate_weather_forecast_button"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="CROP SUGGESTION"
+        android:id="@+id/navigate_suggestion_button"/>
 </LinearLayout>

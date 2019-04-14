@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".NavigationActivity" />
         <activity android:name=".CallibrateSensorActivity" />
-        <activity android:name=".WeatherForecast"></activity>
+        <activity android:name=".WeatherForecast" />
+        <activity android:name=".SuggestionActivity"></activity>
     </application>
 
 </manifest>

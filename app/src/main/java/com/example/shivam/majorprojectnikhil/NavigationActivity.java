@@ -7,13 +7,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class NavigationActivity extends AppCompatActivity {
-Button callibrate,forecast;
+Button callibrate,forecast, suggestion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         callibrate = (Button)findViewById(R.id.navigate_callibate_sensor_button);
         forecast = (Button)findViewById(R.id.navigate_weather_forecast_button);
+        suggestion =(Button)findViewById(R.id.navigate_suggestion_button);
         forecast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,6 +26,14 @@ Button callibrate,forecast;
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(NavigationActivity.this, CallibrateSensorActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        suggestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NavigationActivity.this, SuggestionActivity.class);
                 startActivity(intent);
             }
         });
